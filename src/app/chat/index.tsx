@@ -239,7 +239,7 @@ export default function Page() {
         signal: abortController.signal,
         body: JSON.stringify({
           messages,
-          apiKey: chatConfig.openAIKey,
+          apiKey: "22",
           host: chatConfig.openAIHost,
           model,
           config: {
