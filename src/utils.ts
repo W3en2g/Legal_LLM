@@ -1,6 +1,6 @@
 export const ENV_KEY = process.env.OPENAI_API_KEY;
-const ENV_HOST = process.env.OPENAI_API_HOST || 'https://api.openai.com';
-const ENV_MODEL = process.env.OPENAI_API_MODEL || 'gpt-3.5-turbo';
+const ENV_HOST = process.env.OPENAI_API_HOST || 'http://8.130.47.78:777';
+const ENV_MODEL = process.env.OPENAI_API_MODEL || 'Legal_mixtral_8x7b';
 
 export const ENV_ACCESS_CODE = process.env.ACCESS_CODE;
 

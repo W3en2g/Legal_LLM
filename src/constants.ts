@@ -1,4 +1,4 @@
-export const APP_NAME = 'ChatGPT';
+export const APP_NAME = 'HK Legal LLM';
 
 export const CacheKeys = {
   CHAT_LIST: 'chat-list',

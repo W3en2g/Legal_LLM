@@ -32,13 +32,14 @@ export interface SettingItemType<T = string> {
 }
 
 export const modelList = [
-  { label: 'gpt-3.5-turbo', value: 'gpt-3.5-turbo' },
-  { label: 'gpt-3.5-turbo-16k', value: 'gpt-3.5-turbo-16k' },
-  { label: 'gpt-4', value: 'gpt-4' },
-  { label: 'gpt-4-32k', value: 'gpt-4-32k' },
-  { label: 'text-davinci-003', value: 'text-davinci-003' },
-  { label: 'text-davinci-002', value: 'text-davinci-002' },
-  { label: 'code-davinci-002', value: 'code-davinci-002' },
+  { label: 'mixtral_8x7b', value: 'mixtral_8x7b' },
+  // { label: 'gpt-3.5-turbo', value: 'gpt-3.5-turbo' },
+  // { label: 'gpt-3.5-turbo-16k', value: 'gpt-3.5-turbo-16k' },
+  // { label: 'gpt-4', value: 'gpt-4' },
+  // { label: 'gpt-4-32k', value: 'gpt-4-32k' },
+  // { label: 'text-davinci-003', value: 'text-davinci-003' },
+  // { label: 'text-davinci-002', value: 'text-davinci-002' },
+  // { label: 'code-davinci-002', value: 'code-davinci-002' },
 ];
 
 const asrLanguageList = Object.entries(supportLanguages).map(([label, value]) => ({ label, value }));
@@ -93,14 +94,14 @@ export function SettingPanel() {
       value: 'enterSend',
       placeholder: '',
     },
-    {
-      label: t('Access Code'),
-      value: 'accessCode',
-      placeholder: `${t('please enter')} ${t('Access Code')}`,
-    },
-    { label: 'OpenAI Host', value: 'openAIHost', placeholder: 'https://api.openai.com' },
-    { label: 'OpenAI Key', value: 'openAIKey', placeholder: `${t('please enter')} ` + `OPENAI_KEY` },
-    { label: 'OpenAI Model', value: 'openAIModel', type: 'select', placeholder: 'gpt-3.5-turbo' },
+    // {
+    //   label: t('Access Code'),
+    //   value: 'accessCode',
+    //   placeholder: `${t('please enter')} ${t('Access Code')}`,
+    // },
+    { label: 'Legal LLM Host', value: 'openAIHost', placeholder: 'http://8.130.47.78:777' },
+    { label: 'Legal LLM Key', value: 'openAIKey', placeholder: `22` },
+    { label: 'Legal LLM Model', value: 'openAIModel', type: 'select', placeholder: 'legal mixtral 8x7b' },
     {
       type: 'number',
       label: 'temperature',

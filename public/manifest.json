@@ -1,6 +1,6 @@
 {
-  "name": "ChatGPT",
-  "short_name": "ChatGPT",
+  "name": "HK Legal LLM",
+  "short_name": "HK Legal LLM",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
